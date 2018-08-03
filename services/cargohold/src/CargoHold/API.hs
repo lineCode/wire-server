@@ -2,7 +2,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TypeOperators     #-}
 
-module CargoHold.API (runServer, parseOptions) where
+module CargoHold.API (runServer) where
 
 import CargoHold.App
 import CargoHold.Options
