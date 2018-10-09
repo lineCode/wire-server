@@ -20,5 +20,5 @@ RUN apk add --no-cache git ncurses && \
     cd wire-server && \
     stack update && \
     echo -e "allow-different-user: true\n" >> /root/.stack/config.yaml && \
-    stack --work-dir .stack-docker-profile build --pedantic --haddock --test --dependencies-only --no-run-tests --profile && \
-    stack --work-dir .stack-docker         build --pedantic --haddock --test --dependencies-only --no-run-tests
+    stack --work-dir .stack-docker-profile build --pedantic --haddock --test --no-run-tests --bench --no-run-benchmarks --dependencies-only --profile && \
+    stack --work-dir .stack-docker         build --pedantic --haddock --test --no-run-tests --bench --no-run-benchmarks --dependencies-only
